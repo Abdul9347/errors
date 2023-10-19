@@ -1,0 +1,9 @@
+Reason: Because the default starting branch of git has been changed from master to main, that's why your git command is not recognizing the master branch and giving you a "ref" error.
+I had the same problem.
+
+The solution was, in my branch, called "testBranchSuper", I used
+
+#git checkout -b main
+and then I used
+
+#git push heroku main
